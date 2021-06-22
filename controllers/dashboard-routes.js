@@ -3,10 +3,6 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-
-//--------dashboard-routes----------------
-
-// find All
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
         where: {
@@ -33,18 +29,18 @@ router.get('/', withAuth, (req, res) => {
                 attributes: ['username', 'twitter', 'github']
             }
         ]
-    }).then(dbPostData => {
-        // serialize data before passing to template
-        const posts = dbPostData.map(post => post.get({ plain: true }));
-        res.render('dashboard', { posts, loggedIn: true });
-    }).catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    });
+    })
+        .then(dbPostData => {
+            // serialize data before passing to template
+            const posts = dbPostData.map(post => post.get({ plain: true }));
+            res.render('dashboard', { posts, loggedIn: true });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
 
-
-//GET find by id
 router.get('/edit/:id', withAuth, (req, res) => {
     Post.findOne({
         where: {
@@ -70,31 +66,31 @@ router.get('/edit/:id', withAuth, (req, res) => {
                 attributes: ['username', 'twitter', 'github']
             }
         ]
-    }).then(dbPostData => {
-        if (!dbPostData) {
-            res.status(404).json({ message: 'No post found with this id' });
-            return;
-        }
+    })
+        .then(dbPostData => {
+            if (!dbPostData) {
+                res.status(404).json({ message: 'No post found with this id' });
+                return;
+            }
 
-        // serialize the data
-        const post = dbPostData.get({ plain: true });
+            // serialize the data
+            const post = dbPostData.get({ plain: true });
 
-        res.render('edit-post', {
-            post,
-            loggedIn: true
+            res.render('edit-post', {
+                post,
+                loggedIn: true
+            });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
         });
-    }).catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    });
 });
 
-
-// GET FindAll  
 router.get('/create/', withAuth, (req, res) => {
     Post.findAll({
         where: {
-            // use the ID from the session
+
             user_id: req.session.user_id
         },
         attributes: [
@@ -117,14 +113,16 @@ router.get('/create/', withAuth, (req, res) => {
                 attributes: ['username', 'twitter', 'github']
             }
         ]
-    }).then(dbPostData => {
-        // serialize data before passing to template
-        const posts = dbPostData.map(post => post.get({ plain: true }));
-        res.render('create-post', { posts, loggedIn: true });
-    }).catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    });
+    })
+        .then(dbPostData => {
+
+            const posts = dbPostData.map(post => post.get({ plain: true }));
+            res.render('create-post', { posts, loggedIn: true });
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
 
 
