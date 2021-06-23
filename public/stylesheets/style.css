@@ -14,7 +14,7 @@ html {
 a {
 	text-decoration: none;
 	font-weight: bold;
-	color: black;
+	color: rgb(11, 170, 243);
 }
 
 a:hover {
@@ -27,7 +27,7 @@ button {
 	font-weight: bold;
 	transition: background-color 0.1s;
 	cursor: pointer;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .post-list {
