@@ -23,10 +23,7 @@ A CMS-style Blog built using Model View Controller (MVC) paradigm. Built using M
   
 ## Below is a screenshot of the application:
   
-![All Things Tech Blog](mvc.PNG)
-
-
-
+![All Things Tech Blog](tech-blog-mvc.PNG)
 
    
 ## Table of Contents
