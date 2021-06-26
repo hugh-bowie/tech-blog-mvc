@@ -55,4 +55,4 @@ Enter PW
 
 
 ## Questions
-Contact me with any questions: [email](mailto:hughbowie@me.com) , [GitHub](https://github.com/hugh-bowie)<br />
+Contact me with any questions: [hughbowie@me.com](mailto:hughbowie@me.com) , [https://github.com/hugh-bowie](https://github.com/hugh-bowie)<br />
