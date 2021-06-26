@@ -1,13 +1,10 @@
 <h1 align="center">Tech Blog Model-View-Controller (MVC)</h1>
   
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/hugh-bowie/mvc-tech-blog" />
-    <img src="https://img.shields.io/github/languages/top/hugh-bowie/mvc-tech-blog"  />
-    <img src="https://img.shields.io/github/issues/hugh-bowie/mvc-tech-blog" />
-    <img src="https://img.shields.io/github/last-commit/hugh-bowie/mvc-tech-blog" >
-    <a href="https://github.com/jpd61"><img src="https://img.shields.io/github/followers/hugh-bowie?style=social" target="_blank" /></a>
-    <a href="https://twitter.com/jpdewoody">
-        <img alt="Twitter: jpdewoody" src="https://img.shields.io/twitter/follow/jpdewoody.svg?style=social" target="_blank" />
+    <img src="https://img.shields.io/github/repo-size/hugh-bowie/tech-blog-mvc" />
+    <img src="https://img.shields.io/github/languages/top/hugh-bowie/tech-blog-mvc"  />
+    <img src="https://img.shields.io/github/issues/hugh-bowie/tech-blog-mvc" />
+    <img src="https://img.shields.io/github/last-commit/hugh-bowie/tech-blog-mvc" />
     </a>
 </p>
   
