@@ -1,2 +1,70 @@
-# tech-blog-mvc
-a CMS-style Tech Blog site
+<h1 align="center">Tech Blog Model-View-Controller (MVC)</h1>
+  
+<p align="center">
+    <img src="https://img.shields.io/github/repo-size/hugh-bowie/mvc-tech-blog" />
+    <img src="https://img.shields.io/github/languages/top/hugh-bowie/mvc-tech-blog"  />
+    <img src="https://img.shields.io/github/issues/hugh-bowie/mvc-tech-blog" />
+    <img src="https://img.shields.io/github/last-commit/hugh-bowie/mvc-tech-blog" >
+    <a href="https://github.com/jpd61"><img src="https://img.shields.io/github/followers/hugh-bowie?style=social" target="_blank" /></a>
+    <a href="https://twitter.com/jpdewoody">
+        <img alt="Twitter: jpdewoody" src="https://img.shields.io/twitter/follow/jpdewoody.svg?style=social" target="_blank" />
+    </a>
+</p>
+  
+<p align="center">
+    <img src="https://img.shields.io/badge/javascript-yellow" />
+    <img src="https://img.shields.io/badge/express-orange" />
+    <img src="https://img.shields.io/badge/sequelize-blue"  />
+    <img src="https://img.shields.io/badge/handlebars-red"  />
+    <img src="https://img.shields.io/badge/mySQL-blue"  />
+    <img src="https://img.shields.io/badge/dotenv-green" />
+</p>
+   
+## Description
+
+A CMS-style Blog built using Model View Controller (MVC) paradigm. Built using MySQL2, Express, Sequelize, Bulma, Handlebars and dotenv.
+
+**[Deployed Application](https://hidden-falls-22101.herokuapp.com/)**
+  
+ Below is a screenshot of the application:
+  
+![technically speaking: a tech blog](screenshot.PNG)
+
+
+
+
+   
+## Table of Contents
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [Questions](#questions)
+
+## Installation
+
+`npm init`
+
+`npm install bcrypt bulma connect-session-sequelize dotenv express express-handlebars express-session mysql2 sequelize`
+  
+## Usage
+
+`mysql -u root -p`
+
+Enter PW 
+
+`source db/schema.sql`
+
+`quit`
+
+`npm run seed`
+  
+`npm start`
+
+
+## Questions
+Contact me with any questions: [email](mailto:hughbowie@me.com) , [GitHub](https://github.com/hugh-bowie)<br />
