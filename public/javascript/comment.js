@@ -1,6 +1,6 @@
 async function commentFormHandler(event) {
     event.preventDefault();
-
+try {
     const comment_text = document.querySelector('textarea[name="comment-body"]').value.trim();
 
     const post_id = window.location.toString().split('/')[
@@ -24,6 +24,10 @@ async function commentFormHandler(event) {
         } else {
             alert(response.statusText);
         }
+         } catch (e) {
+        console.log('error = ', e);
+        process.exit(1);
+    }
     }
 }
 
