@@ -23,7 +23,7 @@ A CMS-style Blog built using Model View Controller (MVC) paradigm. Built using M
 
 ### Deployed App: [tech-blog-mvc.herokuapp.com](https://hb-tech-blog-mvc.herokuapp.com/)
   
-## Below is a screenshot of the application:
+## Screenshot of the application:
   
 ![All Things Tech Blog](tech-blog-mvc.PNG)
 
